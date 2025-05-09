@@ -26,7 +26,7 @@ const App = () => {
 
     try {
       const response = await axios.post(
-        `{${import.meta.env.VITE_BACKEND_URL}/api/email/generate}`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/email/generate`,
         {
           emailContent,
           tone,

@@ -1,0 +1,5 @@
+Frontend/*.env
+Backend/.properties
+Frontend/node_modules
+Frontend/build
+

@@ -14,6 +14,10 @@ public class EmailGeneratorController {
 
     private final EmailGeneratorService emailGeneratorService;
 
+    @GetMapping("/health")
+    public String DefaultRoute(){
+        return "Server is up and running";
+    }
     @PostMapping("/generate")
     public ResponseEntity<String> generateEmail(@RequestBody EmailRequest emailRequest){
         String response = emailGeneratorService.generateEmailReply(emailRequest);
